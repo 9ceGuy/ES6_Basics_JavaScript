@@ -5,15 +5,35 @@
 
 <script>
 
+  //This is more like a JSON representation
   //object variable
   //in java is HashMap  
   //in java is HashSet
   //A key-value map representation
-const myVehicle = {
-  brand: 'Ford',
-  model: 'Mustang',
-  color1: 'red'
-}
+const myVehicle = 
+[
+  [
+    'Ford',
+    'Mustang',
+    'red'
+  ],
+  [
+    'Ford1',
+    'Mustang',
+    'red'
+  ],
+  [
+    'Ford2',
+    'Mustang',
+    'red'
+  ],
+  [
+    'Ford3',
+    'Mustang',
+    'red'
+  ]
+]
+
 
 //object variable
 const updateMyVehicle = {
@@ -24,9 +44,11 @@ const updateMyVehicle = {
 
 //Spread feature will help us to merge multiple arrays or objects 
 const arrayObject = ["Omiete", "Esther", "Waribi", "Sam", "Life"];
+
+//Spreading takes place here....
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
 
-const variableObj_arrayObj = {...arrayObject, ...myVehicle}
+const variableObj_arrayObj = {...myVehicle, ...arrayObject}
 
 
 //Check the result object in the console:

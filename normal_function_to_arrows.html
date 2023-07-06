@@ -20,6 +20,7 @@
 
 
     <script>
+<<<<<<< HEAD
         //displayer_1
         first = (value1) =>{
             document.getElementById("display1").innerHTML = value1;
@@ -27,22 +28,37 @@
 
         //displayer_2
         second = (value1, value2) =>{
+=======
+        first = (value1) => document.getElementById("display1").innerHTML = value1;
+
+        second = (value1, value2) => {
+>>>>>>> f3048fd7191a52fe8e506eeaa5ca244fd1e76152
             let value3 = value1 * value2;
             document.getElementById("display2").innerHTML = value3;
             alert("Hi There!!!!");
         }
 
+<<<<<<< HEAD
         
         first2 = (value1) => value1;
        
         //displayer_2
         second2 = (value1, value2) =>{
+=======
+        first2 = (value1) => value1;
+
+        second2 = (value1, value2) => {
+>>>>>>> f3048fd7191a52fe8e506eeaa5ca244fd1e76152
             let value3 = value1 * value2;
             return value3;
         }
 
+<<<<<<< HEAD
 
         fifth = (value3) =>{
+=======
+        fifth = (value3) => {
+>>>>>>> f3048fd7191a52fe8e506eeaa5ca244fd1e76152
             let final = first2(3) * second2(3,3) + value3;
             document.getElementById("display3").innerHTML = final;
         }
@@ -50,8 +66,11 @@
         first(3);
         second(3,3);
         fifth(3);
+<<<<<<< HEAD
         console.log(first2(4));
         console.log(second2(4,4));
+=======
+>>>>>>> f3048fd7191a52fe8e506eeaa5ca244fd1e76152
 
     </script>
 </body>

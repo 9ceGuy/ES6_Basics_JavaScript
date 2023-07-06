@@ -4,24 +4,37 @@
     <script>
 
       //Destructuring has to do with Arrays!
+<<<<<<< HEAD
       //Ideally, Arrays possesses internal structure which is built by the internal indexes.
       //We are actually going to be destructuring Arrays structures
 
       calculate = (a, b) => {
+=======
+      //Ideally, an Array possesses internal structure which is built
+      //by the internal indexes.
+      //We are actually going to be destructuring Arrays structures 
+        calculate = (a, b) => {
+>>>>>>> f3048fd7191a52fe8e506eeaa5ca244fd1e76152
         let add = a + b;
         let subtract = a - b;
         let multiply = a * b;
         let divide = a / b;
-
         return [add, subtract, multiply, divide];
       }
 
       //destructuring of an ARRAY
-      [add, subtract, multiply, divide] = calculate(4, 7);
+      const [add, subtract, multiply, divide] = calculate(4, 7);
+
+      console.log(calculate(4,7));
+
+      first = () => {
+        document.write("<p>Sum: " + add + "</p>");
+      }
 
       // add = 3+5;
       // ar[0] = calculate(4, 7);
       // const ar = ar[0];
+      first();
       document.write("<p>Sum: " + add + "</p>");
       document.write("<p>Difference " + subtract + "</p>");
       document.write("<p>Product: " + multiply + "</p>");

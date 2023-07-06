@@ -12,12 +12,20 @@
     <p id="display3"></p>
     <p id="display4"></p>
     <p id="display5"></p>
+    <p id="display6"></p>
+    <p id="display7"></p>
+    <p id="display8"></p>
+    <p id="display9"></p>
+    <p id="display10"></p>
 
 <script type="module">
-        import groupOfPeople from "./message.js";
+        import groupOfPeople from "./import_default.js";
 
-        const [name1, name2, name3, name4, name5] = groupOfPeople();
+        const [name1, name2, name3, name4, name5, name6, name7, name8, name9, name10] = groupOfPeople;
         
+
+        // console.log(groupOfPeople);
+
         // document.getElementById("display")
         // .innerHTML = "Our first name is: " + groupOfPeople();
         document.getElementById("display1")
@@ -30,6 +38,16 @@
         .innerHTML = "Our first name is: " + name4;
         document.getElementById("display5")
         .innerHTML = "Our first name is: " + name5;
+        document.getElementById("display6")
+        .innerHTML = "Our first name is: " + name6;
+        document.getElementById("display7")
+        .innerHTML = "Our first name is: " + name7;
+        document.getElementById("display8")
+        .innerHTML = "Our first name is: " + name8;
+        document.getElementById("display9")
+        .innerHTML = "Our first name is: " + name9;
+        document.getElementById("display10")
+        .innerHTML = "Our first name is: " + name10;
         </script>
 </body>
 </html>
